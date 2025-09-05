@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    font-size: 1.4rem;
+    padding-top: 100px; 
+}
+
+main {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1000px;
+}
+
+h1, h2 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+section h2 {
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 50px 0;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    opacity: 1;
+    transform: translateY(0);
+    scroll-margin-top: 110px;
+}
+
+#inicio {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+#sobre-mi {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#sobre-mi img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0,123,255,0.2);
+    transform: translateY(-5px);
+}
+
+#habilidades .card i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#habilidades .card:hover i {
+    transform: scale(1.15);
+    color: #007bff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 6px 0;
+}
+
+ul li strong {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #66b3ff;
+    padding: 12px 0;
+    transition: background 0.3s ease;
+}
+
+.navbar .nav-link.active {
+    color: white; 
+}
+
+.footer-custom {
+    background-color: #333333;
+    color: white;
+    padding: 25px 15px;
+    width: 100%;
+}
+
+.footer-custom a {
+    color: #66b3ff;
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-custom a:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.proyectos-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+}
+
+.proyecto-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.proyecto-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#proyectos h5 {
+    margin-bottom: 5px;
+}
+
+#proyectos p {
+    margin-bottom: 5px;
+}
+
+#proyectos a {
+    font-weight: bold;
+}
+
+.card-footer {
+    padding: 1.25rem 0; 
+}
